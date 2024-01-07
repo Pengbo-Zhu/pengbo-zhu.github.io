@@ -29,18 +29,25 @@
                     Pengbo Zhu
                   </p>
                   <p>
-                    I am currently a PhD candidate in the
-                    Urban Transport Systems Laboratory (LUTS), at École Polytechnique Fédérale de Lausanne (<a
+                    I am currently a PhD candidate in the <a href="https://www.epfl.ch/labs/luts/">Urban Transport
+                      Systems Laboratory (LUTS)</a>, at École Polytechnique Fédérale de Lausanne (<a
                       href="https://www.epfl.ch/en/">EPFL</a>),
-                    Switzerland. I am co-supervised by Prof. Nikolas Geroliminis and Prof. Giancarlo Ferrari-Trecate. My
-                    research is a part of "Mobility of the future" in The National Centre of Competence in Research
-                    "Dependable, ubiquitous automation" (NCCR automation), funded by Swiss National Science Foundation
-                    (<a href="https://www.snf.ch/en">SNSF</a>).
+                    Switzerland. I am co-supervised by <a
+                      href="https://scholar.google.com/citations?user=GDc_4HUAAAAJ&hl=en">Prof. Nikolas Geroliminis</a>
+                    and <a href="https://scholar.google.it/citations?user=iL8JWxAAAAAJ&hl=en">Prof. Giancarlo
+                      Ferrari-Trecate</a>. My
+                    research is a part of "Mobility of the future" in National Centre of Competence in Research
+                    "Dependable, ubiquitous automation" (<a href="https://nccr-automation.ch/"> NCCR automation</a>),
+                    funded by Swiss National Science Foundation
+                    (<a href="https://www.snf.ch/en">SNSF</a>). Before that, I received the B.Sc. degree in Automation in 2017 and
+                    M.Sc. degree in Control Science
+                    and Engineering in 2019 from Harbin Institute of Technology, China.
                   </p>
                   <p style="text-align:center">
-                    <a href="pengbo.zhu@epfl.ch">Email</a> &nbsp;/&nbsp;
+                    <a href="pengbozhu1995@gmail.com">Email</a> &nbsp;/&nbsp;
                     <a href="https://scholar.google.com/citations?user=-QAlX-wAAAAJ">Scholar</a> &nbsp;/&nbsp;
-                    <a href="https://ch.linkedin.com/in/pengbo-zhu-epfl">LinkedIn</a> &nbsp;
+                    <a href="https://ch.linkedin.com/in/pengbo-zhu-epfl">LinkedIn</a> &nbsp;/&nbsp;
+                    <a href="https://people.epfl.ch/pengbo.zhu?lang=en">EPFL profile</a> &nbsp;
                   </p>
                 </td>
                 <td style="padding:2.5%;width:40%;max-width:40%">
@@ -59,21 +66,71 @@
                 <td style="padding:20px;width:100%;vertical-align:middle">
                   <h2>Research</h2>
                   <p>
-                    My research interests lie in fleet management, mobility on-demand Systems, traffic control, and
-                    multi-agent systems.
+                    My research interests lies in the intersection of urban transportation and control theories,
+                    especially in fleet management of multi-agent systems, optimization in mobility on-demand systems,
+                    and traffic control.
                   </p>
                 </td>
               </tr>
             </tbody>
           </table>
 
+          <!-- <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:20px;width:100%;vertical-align:middle">
+                  <h4>Hierarchical Stucture for Idle Vehicle Repositioning</h4>
+                  <p>
+                    We introduce a novel hierarchical structure attempting to balance empty vehicle supply and passenger
+                    demand efficiently. We cluster the city area into multiple regions initially. The framework consists
+                    of multiple control levels: the upper level manages aggregated traffic elements in a centralized
+                    manner, e.g. how many vehicles should be relocated to other regions; while the lower level provides
+                    position guidance for individual vehicles in each region, e.g. which intersection one empty vehicle
+                    should go. This hierarchical structure bridges the gap between macroscopic and microscopic
+                    perspectives.
+
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table> -->
+
           <!-- Add paper like the following table -->
+
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
               <tr>
                 <td style="padding:20px;width:25%;vertical-align:middle">
-                  <img src="images/ecc23.jpg" alt="placeholder" width="240" height="100" style="border-style: none">
+                  <img src="images/HierarchicalFramework.png" alt="placeholder" width="240" height="130"
+                    style="border-style: none">
+                </td>
+                <td width="75%" valign="middle">
+                  <a href="https://events.infovaya.com/presentation?id=113894">
+                    <span class="papertitle">Hierarchical Fleet Repositioning Control in Ride-hailing Systems</span>
+                  </a>
+                  <br>
+                  Caio Vitor Beojone, <strong>Pengbo Zhu</strong>, Isik Ilber Sirmatel, Nikolas Gerolimini
+                  <br>
+                  <em>2023 IEEE 26th International Conference on Intelligent Transportation Systems (ITSC 2023) </em>,
+                  Bilbao, Spain.
+                  <br>
+                  <p>This paper has constructed a multi-layer control structure to offer both inter-regional and
+                    intra-regional vehicle position guidance. It has employed an aggregated MFD-based model and MPC to
+                    determine optimal vehicle relocation flows between neighboring regions, while the fine-grained
+                    position guidance is provided by a lower-layer coverage control algorithm.</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <img src="images/DeePC.jpg" alt="placeholder" width="240" height="150" style="border-style: none">
                 </td>
                 <td width="75%" valign="middle">
                   <a href="https://ieeexplore.ieee.org/abstract/document/10178140">
@@ -82,20 +139,194 @@
                   <br>
                   <strong>Pengbo Zhu</strong>, Giancarlo Ferrari-Trecate, Nikolas Gerolimini
                   <br>
-                  <em>ECC</em>, 2023
+                  <em>2023 European Control Conference (ECC 2023)</em>, Bucharest, Romania
                   <br>
-                  <p>This paper is about empty vehicle rebalancing using data-enabled predictive control.</p>
+                  <p>We implement a novel data-enabled predictive control algorithm (DeePC) for inter-regional vehicle
+                    deployment to balance the passenger demand and vehicle supply. Constructed by collected historical
+                    data from the considered unknown system, a non-parametric representation is used to predict future
+                    behavior and obtain optimal control actions, circumventing the costly system modeling process.</p>
                 </td>
               </tr>
             </tbody>
           </table>
 
 
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <img src="images/CC2.jpg" alt="placeholder" width="240" height="140" style="border-style: none">
+                </td>
+                <td width="75%" valign="middle">
+                  <a href="https://arxiv.org/abs/2311.11716">
+                    <span class="papertitle">A Coverage Control-based Idle Vehicle Rebalancing Approach for Autonomous
+                      Mobility-on-demand Systems</span>
+                  </a>
+                  <br>
+                  <strong>Pengbo Zhu</strong>, Isik Ilber Sirmatel, Giancarlo Ferrari-Trecate, Nikolas Gerolimini
+                  <br>
+                  <em>arxiv</em>.
+                  <br>
+                  <p>This paper extended the coverage control method of our eariler work "Idle-vehicle Rebalancing
+                    Coverage Control for Ride-sourcing
+                    systems" to graphs. This is important for the practical implementation of the proposed algorithm in
+                    urban road networks that invariably have a graph structure (while the original coverage control
+                    method involves a continuous space).</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+
+
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <img src="images/CC1.jpg" alt="placeholder" width="240" height="80" style="border-style: none">
+                </td>
+                <td width="75%" valign="middle">
+                  <a href="https://ieeexplore.ieee.org/document/9838069">
+                    <span class="papertitle">Idle-vehicle Rebalancing Coverage Control for Ride-sourcing systems</span>
+                  </a>
+                  <br>
+                  <strong>Pengbo Zhu</strong>, Isik Ilber Sirmatel, Giancarlo Ferrari-Trecate, Nikolas Gerolimini
+                  <br>
+                  <em>2022 European Control Conference (ECC 2022)</em>, London, United Kingdom
+                  <br>
+                  <p>The ride-sourcing system can provide passengers with fast and efficient service with a fleet of
+                    vehicles, while asymmetry between origin and destination distributions of trips leads to the
+                    imbalance between passenger demand and vehicle supply. Thus proactively relocating idle vehicles to
+                    the high-demand regions, also known as vehicle rebalancing, is an emerging problem that can
+                    significantly improve urban transportation efficiency. We formulate this problem as a Voronoi-based
+                    coverage control problem for the coordination and deployment of multiple mobile agents in city
+                    scenarios, which vehicles can benefit from by allocating them according to the different demand
+                    densities of different city districts.</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+
+
+
+
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
             <tbody>
               <tr>
                 <td>
-                  <h2>Miscellanea</h2>
+                  <h2>Activities</h2>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <img src="images/PaxData.jpg" alt="placeholder" width="300" height="180" style="border-style: none">
+                </td>
+                <td width="75%" valign="middle">
+                  <a href="https://zenodo.org/records/8287367">
+                    <span class="papertitle">Opensource Dataset for Urban Transportation Study</span>
+                  </a>
+                  <p> <a href="https://zenodo.org/records/8287367">One dataset </a> of passenger requests focusing on
+                    urban on-demand mobility in Shenzhen is uploaded. The dataset in this repository is associated with
+                    our paper titled "Idle-vehicle Rebalancing Coverage Control for Ride-sourcing systems", which can be
+                    found via <a href="https://ieeexplore.ieee.org/document/9838069">this link</a>. The study
+                    focuses on urban on-demand mobility in Shenzhen, China.</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <img src="images/NCCRWomen.png" alt="placeholder" width="300" height="160" style="border-style: none">
+                </td>
+                <td width="75%" valign="middle">
+                  <a href="https://www.youtube.com/watch?v=9cIiJMvH9wU&themeRefresh=1">
+                    <span class="papertitle">NCCR Woman Campaign</span>
+                  </a>
+                  <p> This video introduces my research work on developing intelligent systems to improve the
+                    ride-hailing vehicle spatial distributions, and emphasizes the importance of diversity in research
+                    domain. The <a href="https://nccr-rna-and-disease.ch/news/newsletter/nccrwomen-campaign">#NCCRWomen
+                      campaign</a> introduces you to a different woman working in research in a Swiss National Centre of
+                    Competence in Research every day. </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <img src="images/LUTS.jpeg" alt="placeholder" width="300" height="160" style="border-style: none">
+                </td>
+                <td width="75%" valign="middle">
+                  <a href="https://www.youtube.com/watch?v=sZuG1c9u--s">
+                    <span class="papertitle">NCCR Automation: Developing the mobility of the future</span>
+                  </a>
+                  <p> This video introduces how researchers are addressing different obstacles to make urban mobility
+                    more efficient.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <img src="images/SummerSchool.jpg" alt="placeholder" width="300" height="160"
+                    style="border-style: none">
+                </td>
+                <td width="75%" valign="middle">
+                  <a href="https://sites.google.com/view/optcontrol-infr-nets/home?authuser=0">
+                    Co-organizer of Summer School 2021: <span class="papertitle">Optimization and Control in
+                      Infrastructure Networks</span>
+                  </a>
+                  <p>The summer school, co-organized by EPFL and ETH, features large-scale optimization and distributed
+                    control with a special focus on applications in both power systems and transportation systems.</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:20px;width:100%;vertical-align:middle">
+                  <h2>Teaching</h2>
+                  <p>
+                    TA for <a
+                      href="https://edu.epfl.ch/coursebook/en/fundamentals-of-traffic-operations-and-control-CIVIL-457">CIVIL-457:
+                      Fundamentals of traffic operations and control</a>, EPFL.
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <tbody>
+              <tr>
+                <td>
+                  <h2>Latest news</h2>
+                  <p>01/2024: I will attend the 103rd Transportation Research Board Annual Meeting (<a href="https://www.trb.org/AnnualMeeting/AnnualMeeting.aspx">TRB 2024</a>) and give an oral presentation titled "Where should an empty Uber go: Model-Free Control for Vehicle Rebalancing Via a Hierarchical Structure".
+                    <p>
                 </td>
               </tr>
             </tbody>
@@ -108,7 +339,7 @@
                 <td style="padding:0px">
                   <br>
                   <p style="text-align:right;font-size:small;">
-                    template from <a href="https://jonbarron.info/">here</a>
+                    This website template is from <a href="https://jonbarron.info/">here</a>.
                   </p>
                 </td>
               </tr>
